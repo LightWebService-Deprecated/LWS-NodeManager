@@ -60,6 +60,7 @@ namespace LWS_NodeManager.Service
             await _nodeRepository.AddNodeInfoAsync(new NodeInformation
             {
                 NodeMaximumCpu = nodeMetadata.NodeMaximumCpu,
+                NodeUrl = nodeRequest.NodeServerUrl,
                 NodeMaximumRam = nodeMetadata.NodeMaximumRam,
                 NodeNickName = nodeMetadata.NodeNickName,
                 NodeAllocatedCpu = 0,

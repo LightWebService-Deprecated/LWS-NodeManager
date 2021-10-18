@@ -10,9 +10,10 @@ namespace LWS_NodeManager.Model
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public string NodeNickName { get; set; }
+        public string NodeUrl { get; set; }
         public int NodeMaximumCpu { get; set; }
         public int NodeMaximumRam { get; set; }
-        
+
         // Allocated Resource Information(Which is NOT identical to real system usage.)
         public int NodeAllocatedCpu { get; set; }
         public int NodeAllocatedRam { get; set; }

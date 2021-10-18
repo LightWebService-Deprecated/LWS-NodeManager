@@ -47,6 +47,9 @@ namespace LWS_NodeManager
             
             // Service
             services.AddScoped<NodeManageService>();
+            
+            // Heartbeat
+            services.AddHostedService<NodeHealthCheckService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
